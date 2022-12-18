@@ -9,10 +9,11 @@
 	<h1>Ha ocurrido un error 404 Oops!</h1>
 	<hr />
 	<h2 th:text="${error} +': '+ ${status}"></h2>
-	<!--  <h3 th:text="${message}"></h3> -->
+	<h3 th:text="${message}"></h3>
 	<h4 th:text="${timestamp}"></h4>
 	<h4 th:text="${path}"></h4>
-	<!--  <h4 th:text="${trace}"></h4>  -->
+	<hr />
+	<div th:text="${trace}"></div>
 
 
 </body>

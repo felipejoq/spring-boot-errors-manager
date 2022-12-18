@@ -2,17 +2,17 @@
 <html xmlns:th="http://www.thymeleft.org">
 <head>
 <meta charset="UTF-8">
-<title>Ha ocurrido un error 500 Oops!</title>
+<title th:text="${error}"></title>
 </head>
 <body>
 
-	<h1>Ha ocurrido un error 500 Oops!</h1>
+	<h1 th:text="${error}"></h1>
 	<hr />
 	<h2 th:text="${error} +': '+ ${status}"></h2>
 	<h3 th:text="${message}"></h3>
 	<h4 th:text="${timestamp}"></h4>
 	<hr />
-	<div th:text="${trace}"></div>
+	<p th:text="${trace}"></p>
 
 
 </body>
