@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleft.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${error}"></title>
+</head>
+<body>
+
+	<h1 th:text="${error}"></h1>
+	<hr />
+	<h2 th:text="${error} +': '+ ${status}"></h2>
+	<h3 th:text="${message}"></h3>
+	<h4 th:text="${timestamp}"></h4>
+	<!--  <h4 th:text="${trace}"></h4>  -->
+
+
+</body>
+</html>

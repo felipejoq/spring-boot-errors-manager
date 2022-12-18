@@ -10,7 +10,9 @@ public class AppController {
 	@GetMapping("/")
 	public String index(Model model) {
 		
-		Integer valor = 100/0;
+		
+//		Integer valor = 100/0;
+		Integer valor = Integer.parseInt("10_");
 		
 		return "index";
 	}
